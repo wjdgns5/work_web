@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1>인사말 생성기</h1>
+	<!-- 절대 경로 : / -->
+	<!-- 상대 경로 : views/greet2.jsp --> <!-- 내 기준에서 찾아가는 방법 -->
+	<form action="greet.jsp" method="POST">
+		<label for="name">당신의 이름을 입력하세요: </label>
+		<input type="text" id="name" name="name" required="required">
+		<!-- required="required" : null 값 방지하려고 -->
+		<!-- name="name" : 키 - 값 -->
+		
+	<button type="submit">서버로 제출</button>
+	</form>
+	
+</body>
+</html>

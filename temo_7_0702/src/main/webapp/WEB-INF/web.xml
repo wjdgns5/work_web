@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>temo_7_0702</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>HomeServlet</display-name>
+    <servlet-name>HomeServlet</servlet-name>
+    <servlet-class>com.tenco.controller.HomeServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>HomeServlet</servlet-name>
+    <url-pattern>/HomeServlet</url-pattern>
+  </servlet-mapping>
+  
+  <filter>
+    <display-name>SimpleFilter</display-name>
+    <filter-name>SimpleFilter</filter-name>
+    <filter-class>com.tenco.filters.SimpleFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+    <filter-name>SimpleFilter</filter-name>
+    <url-pattern>/SimpleFilter</url-pattern>
+  </filter-mapping>
+  
+  <filter>
+    <display-name>IPBlockFilter</display-name>
+    <filter-name>IPBlockFilter</filter-name>
+    <filter-class>com.tenco.filters.IPBlockFilter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+    <filter-name>IPBlockFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <listener>
+    <listener-class>com.tenco.listeners.ApplifecycleListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.tenco.listeners.MySessionListener</listener-class>
+  </listener>
+  
+  <filter>
+    <display-name>SessionTestServlet</display-name>
+    <filter-name>SessionTestServlet</filter-name>
+    <filter-class>com.tenco.controller.SessionTestServlet</filter-class>
+  </filter>
+  
+  <filter-mapping>
+    <filter-name>SessionTestServlet</filter-name>
+    <url-pattern>/SessionTestServlet</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SessionTestServlet</display-name>
+    <servlet-name>SessionTestServlet</servlet-name>
+    <servlet-class>com.tenco.controller.SessionTestServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>SessionTestServlet</servlet-name>
+    <url-pattern>/SessionTestServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

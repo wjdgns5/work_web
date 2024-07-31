@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>인라인 블록요소 예시</title>
+<!--  title은 보이지 않는다. -->
+
+<style type="text/css">
+	
+	.navbar {
+		display: flex;
+		border: 1px solid black;
+		background-color: #f8f9fa;
+		padding: 10px;
+	}
+	
+	.navbar2 {
+		display: flex;
+		border: 1px solid black;
+		background-color: #f8f9fa;
+		padding: 10px;
+		flex-direction: column;
+	}
+	
+	.navbar3 {
+		display: flex;
+		border: 3px black;
+		padding: 10px;
+	}
+	
+	.nav-item {
+		margin: 5px;
+		padding: 10px;
+		background-color: lightblue;
+		color: white;
+		text-align: center;
+		border-radius: 4px;
+		text-decoration: none;
+	}
+	
+	.section {
+		height: 300px;
+		padding: 20px;
+		margin-top: 20px;
+		border: 1px solid #000;
+	}
+	
+</style>
+
+</head>
+
+<body>
+	<!-- http://localhost:8080/demo1/demo_04.html -->
+	<h1>여기는 demo_04.html 파일 입니다.</h1>
+	<br>
+	
+	<h2>flex-direction: row</h2>
+	<div class="navbar">
+		<a href="#home" class="nav-item">홈</a>
+		<a href="#about" class="nav-item">소개</a>
+		<a href="#services" class="nav-item">서비스</a>
+		<a href="#contact" class="nav-item">연락처</a>
+	</div>
+	
+	<h2>flex-direction: column</h2>
+	<div class="navbar2">
+		<a href="#home" class="nav-item">홈</a>
+		<a href="#about" class="nav-item">소개</a>
+		<a href="#services" class="nav-item">서비스</a>
+		<a href="#contact" class="nav-item">연락처</a>
+	</div>
+	
+	<div class="section" id="home">
+		<h2>홈 섹션</h2>
+		<p>여기는 홈 섹션 영역입니다.</p>
+	</div>
+	
+	<div class="section" id="about">
+		<h2>소개 섹션</h2>
+		<p>여기는 소개 섹션 영역입니다.</p>
+	</div>
+	
+	<div class="section" id="services">
+		<h2>서비스 섹션</h2>
+		<p>여기는 서비스 섹션 영역입니다.</p>
+	</div>
+	
+	<div class="section" id="contact">
+		<h2>연락처 섹션</h2>
+		<p>여기는 연락처 섹션 영역입니다.</p>
+	</div>
+
+</body>
+
+</html>

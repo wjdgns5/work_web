@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {
+	
+	display: flex;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+	justify-content: center;
+	height: 100vh;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center; 
+	width: 100%;
+}
+
+.table {
+	display: flex;
+	justify-content: center;
+	background-color: lightblue;
+}
+
+.nav {
+	justify-content: center;
+	background-color: lightgreen;
+}

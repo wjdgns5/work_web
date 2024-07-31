@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>인라인 블록 요소 예시</title>
+
+<style type="text/css">
+	.container {
+		display: flex;
+		border: 1px solid black;
+		flex-direction: row;
+	}
+	
+	.item {
+		background-color: lightblue;
+		padding: 10px;
+		margin: 5px;
+		border: 1px solid blue;
+		
+	}
+	
+	
+	
+</style>
+
+
+</head>
+<body>
+
+	<!-- http://localhost:8080/temo/demo_03.html -->
+	
+	<h1>여기는 demo_03.html 파일 입니다.</h1>
+	<br>
+	
+	<h3>flex-direction : row(기본값)</h3>
+	<div class = "container">
+		<div class = "item">아이템 1</div>
+		<div class = "item">아이템 2</div>
+		<div class = "item">아이템 3</div>
+	</div>
+	
+	<h3>flex-direction : row-reverse</h3>
+	<div class = "container" style="flex-direction: row-reverse;">
+		<div class = "item">아이템 1</div>
+		<div class = "item">아이템 2</div>
+		<div class = "item">아이템 3</div>
+	</div>
+	
+	<h3>flex-direction : column</h3>
+	<div class = "container" style="flex-direction: column">
+		<div class = "item">아이템 1</div>
+		<div class = "item">아이템 2</div>
+		<div class = "item">아이템 3</div>
+	</div>
+	
+	<h3>flex-direction : column-reverse</h3>
+	<div class = "container" style="flex-direction: column-reverse">
+		<div class = "item">아이템 1</div>
+		<div class = "item">아이템 2</div>
+		<div class = "item">아이템 3</div>
+	</div>
+
+
+</body>
+</html>
